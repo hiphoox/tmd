@@ -20,6 +20,7 @@ void usage(void)
   exit(EXIT_FAILURE);
 }
 
+#pragma mark - Main Display
 void setMainDisplay(CGDisplayCount maxDisplays, CGDirectDisplayID targetDisplay)
 {
   CGDisplayErr       dErr;
@@ -58,6 +59,7 @@ void setMainDisplay(CGDisplayCount maxDisplays, CGDirectDisplayID targetDisplay)
   }
 }
 
+#pragma mark - Mirroring
 void toggleMirror(CGDisplayCount maxDisplays, CGDirectDisplayID secondaryDisplay)
 {
   CGDisplayCount    numberOfActiveDisplays;
@@ -94,6 +96,7 @@ void toggleMirror(CGDisplayCount maxDisplays, CGDirectDisplayID secondaryDisplay
   }
 }
 
+#pragma mark - Main program
 int main(int argc, char * argv[])
 {
   CGDisplayErr      dErr;
