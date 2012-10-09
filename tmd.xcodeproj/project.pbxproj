@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		801AAA651623E5AE00B33306 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 801AAA641623E5AE00B33306 /* main.c */; };
 		801AAA671623E5AE00B33306 /* tmd.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 801AAA661623E5AE00B33306 /* tmd.1 */; };
+		801AAA6E1623E8B800B33306 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801AAA6D1623E8B800B33306 /* ApplicationServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		801AAA601623E5AE00B33306 /* tmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmd; sourceTree = BUILT_PRODUCTS_DIR; };
 		801AAA641623E5AE00B33306 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		801AAA661623E5AE00B33306 /* tmd.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = tmd.1; sourceTree = "<group>"; };
+		801AAA6D1623E8B800B33306 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801AAA6E1623E8B800B33306 /* ApplicationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				801AAA631623E5AE00B33306 /* tmd */,
 				801AAA611623E5AE00B33306 /* Products */,
+				801AAA6D1623E8B800B33306 /* ApplicationServices.framework */,
 			);
 			sourceTree = "<group>";
 		};
