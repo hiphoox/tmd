@@ -85,7 +85,7 @@ void toggleMirror(CGDisplayCount maxDisplays, CGDirectDisplayID secondaryDisplay
   }
 
   if (err != kCGErrorSuccess) {
-    fprintf(stderr, "Error with the switch commands!: %d\n",err);
+    fprintf(stderr, "Error with CGConfigureDisplayMirrorOfDisplay!: %d\n",err);
     exit(EXIT_FAILURE);
   }
 
@@ -104,14 +104,14 @@ int main(int argc, char * argv[])
   CGDirectDisplayID secondaryDisplay;
   CGDisplayCount    maxDisplays = MAX_DISPLAYS;
   CGDirectDisplayID onlineDisplays[MAX_DISPLAYS];
-  int opt, mflag;
+  int opt, mflag = FALSE;
 
   while ((opt = getopt(argc, argv, "m")) != -1)
   {
     switch (opt)
     {
       case 'm':
-        mflag = 1;
+        mflag = TRUE;
         break;
       default:
         usage();
